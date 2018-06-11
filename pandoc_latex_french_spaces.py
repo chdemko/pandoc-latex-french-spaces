@@ -11,7 +11,7 @@ from panflute import Space, Str, RawInline, run_filter
 
 def spaces(elem, doc):
     # Is it in the right format and is it a Space?
-    if doc.format == 'latex' and isinstance(elem, Space):
+    if doc.format in ['latex', 'beamer'] and isinstance(elem, Space):
         if isinstance(elem.prev, Str) and elem.prev.text in ['«', '“', '‹']:
             return RawInline('\\thinspace{}', 'tex')
         if isinstance(elem.next, Str):
