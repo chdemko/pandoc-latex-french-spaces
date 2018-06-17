@@ -6,7 +6,6 @@
 [![PyPI version](https://img.shields.io/pypi/v/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
 [![PyPI format](https://img.shields.io/pypi/format/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
 [![License](https://img.shields.io/pypi/l/pandoc-latex-french-spaces.svg)](https://raw.githubusercontent.com/chdemko/pandoc-latex-french-spaces/master/LICENSE)
-[![Downloads](https://img.shields.io/pypi/dm/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
 [![Python version](https://img.shields.io/pypi/pyversions/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
 [![Development Status](https://img.shields.io/pypi/status/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
 
