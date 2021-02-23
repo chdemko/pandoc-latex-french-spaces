@@ -1,11 +1,11 @@
 # pandoc-latex-french-spaces
 
 ![Python package](https://github.com/chdemko/pandoc-latex-french-spaces/workflows/Python%20package/badge.svg?branch=develop)
-[![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-french-spaces/develop.svg)](https://coveralls.io/github/chdemko/pandoc-latex-french-spaces?branch=develop)
+[![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-french-spaces/0.1.2.svg)](https://coveralls.io/github/chdemko/pandoc-latex-french-spaces?branch=0.1.2)
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/chdemko/pandoc-latex-french-spaces.svg)](https://scrutinizer-ci.com/g/chdemko/pandoc-latex-french-spaces/)
 [![PyPI version](https://img.shields.io/pypi/v/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
 [![PyPI format](https://img.shields.io/pypi/format/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
-[![License](https://img.shields.io/pypi/l/pandoc-latex-french-spaces.svg)](https://raw.githubusercontent.com/chdemko/pandoc-latex-french-spaces/develop/LICENSE)
+[![License](https://img.shields.io/pypi/l/pandoc-latex-french-spaces.svg)](https://raw.githubusercontent.com/chdemko/pandoc-latex-french-spaces/0.1.2/LICENSE)
 [![Python version](https://img.shields.io/pypi/pyversions/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
 [![Development Status](https://img.shields.io/pypi/status/pandoc-latex-french-spaces.svg)](https://pypi.org/project/pandoc-latex-french-spaces/)
 
