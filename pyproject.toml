@@ -4,7 +4,7 @@
 
 [tool.poetry]
     name = "pandoc-latex-french-spaces"
-    version = "0.1.2"
+    version = "0.1.2.1"
     description="A pandoc filter for dealing with french spacing rules"
     authors = ["Christophe Demko <chdemko@gmail.com>"]
     license = "BSD-3-Clause"
