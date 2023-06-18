@@ -1,7 +1,7 @@
 Installation
 ============
 
-![Python package](https://github.com/chdemko/pandoc-latex-french-spaces/workflows/Python%20package/badge.svg?branch=develop)
+[![Python package](https://github.com/chdemko/pandoc-latex-french-spaces/workflows/Python%20package/badge.svg?branch=develop)](https://github.com/chdemko/pandoc-latex-french-spaces/actions/workflows/python-package.yml)
 [![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-french-spaces/develop.svg?logo=Codecov&logoColor=white)](https://coveralls.io/github/chdemko/pandoc-latex-french-spaces?branch=develop)
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/chdemko/pandoc-latex-french-spaces.svg?logo=scrutinizer)](https://scrutinizer-ci.com/g/chdemko/pandoc-latex-french-spaces/)
 [![PyPI version](https://img.shields.io/pypi/v/pandoc-latex-french-spaces.svg?logo=Python&logoColor=white)](https://pypi.org/project/pandoc-latex-french-spaces/)
