@@ -6,7 +6,7 @@ Pandoc filter for converting spaces to non-breakable spaces.
 This filter is for use in LaTeX for french ponctuation.
 """
 
-from panflute import RawInline, Space, Str, run_filter  # type: ignore
+from panflute import RawInline, Space, Str, run_filter
 
 
 def spaces(elem, doc):
@@ -16,9 +16,9 @@ def spaces(elem, doc):
     Arguments
     ---------
     elem
-        A tree element
+        A tree element.
     doc
-        The pandoc document
+        The pandoc document.
 
     Returns
     -------
@@ -26,12 +26,12 @@ def spaces(elem, doc):
     """
     # Is it in the right format and is it a Space?
     if doc.format in ("latex", "beamer") and isinstance(elem, Space):
-        if isinstance(elem.prev, Str) and elem.prev.text in ("«", "“", "‹"):
+        if isinstance(elem.prev, Str) and elem.prev.text[-1] in ("«", "“", "‹"):
             return RawInline("\\thinspace{}", "tex")
         if isinstance(elem.next, Str):
-            if elem.next.text == ":":
+            if elem.next.text[0] == ":":
                 return RawInline("~", "tex")
-            if elem.next.text in (";", "?", "!", "»", "”", "›"):
+            if elem.next.text[0] in (";", "?", "!", "»", "”", "›"):
                 return RawInline("\\thinspace{}", "tex")
     return None
 
