@@ -5,6 +5,7 @@ Pandoc filter for converting spaces to non-breakable spaces.
 
 This filter is for use in LaTeX for french ponctuation.
 """
+from __future__ import annotations
 
 from panflute import Doc, Element, RawInline, Space, Str, run_filter
 
