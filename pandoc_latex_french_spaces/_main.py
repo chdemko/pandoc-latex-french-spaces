@@ -6,10 +6,10 @@ Pandoc filter for converting spaces to non-breakable spaces.
 This filter is for use in LaTeX for french ponctuation.
 """
 
-from panflute import RawInline, Space, Str, run_filter
+from panflute import Doc, Element, RawInline, Space, Str, run_filter
 
 
-def spaces(elem, doc):
+def spaces(elem: Element, doc: Doc) -> RawInline | None:
     """
     Add LaTeX spaces when needed.
 
@@ -22,6 +22,7 @@ def spaces(elem, doc):
 
     Returns
     -------
+    RawInline | None
         A RawInLine or None.
     """
     # Is it in the right format and is it a Space?
@@ -36,7 +37,7 @@ def spaces(elem, doc):
     return None
 
 
-def main(doc=None):
+def main(doc: Doc | None = None) -> Doc:
     """
     Process conversion.
 
@@ -44,8 +45,13 @@ def main(doc=None):
     ---------
     doc
         The pandoc document
+
+    Returns
+    -------
+    Doc
+        The modified document
     """
-    run_filter(spaces, doc=doc)
+    return run_filter(spaces, doc=doc)
 
 
 if __name__ == "__main__":
