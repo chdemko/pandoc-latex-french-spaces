@@ -21,10 +21,10 @@ jobs:
     - name: Set up Poetry
       uses: abatilo/actions-poetry@v2
       with:
-        poetry-version: 1.7.1
+        poetry-version: 1.8.3
     - name: Set up poetry-dynamic-versioning
       run: |
-        poetry self add "poetry-dynamic-versioning[plugin]"        
+        poetry self add "poetry-dynamic-versioning[plugin]"
     - name: Install dependencies
       run: |
         poetry install
