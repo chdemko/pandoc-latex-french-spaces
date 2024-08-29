@@ -38,14 +38,14 @@ comes pre-installed on linux and Mac OS X, and which is easily installed
 
 Install *pandoc-latex-french-spaces* as using the bash command
 
-~~~{prompt} bash
-pipx install pandoc-latex-french-spaces
+~~~shell-session
+$ pipx install pandoc-latex-french-spaces
 ~~~
 
 To upgrade to the most recent release, use
 
-~~~{prompt} bash
-pipx upgrade pandoc-latex-french-spaces
+~~~shell-session
+$ pipx upgrade pandoc-latex-french-spaces
 ~~~
 
 `pipx` is a script to install and run python applications in isolated
@@ -73,9 +73,9 @@ Instructions
 
 Install `poetry`, then run
 
-~~~{prompt} bash
-poetry install
-poetry shell
+~~~shell-session
+$ poetry install
+$ poetry shell
 ~~~
 
 And submit your changes. When you commit, hooks will be executed to check
