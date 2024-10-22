@@ -2,6 +2,7 @@ Installation
 ============
 
 [![Python package](https://github.com/chdemko/pandoc-latex-french-spaces/workflows/Python%20package/badge.svg?branch=develop)](https://github.com/chdemko/pandoc-latex-french-spaces/actions/workflows/python-package.yml)
+[![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://pypi.org/project/black/)
 [![Coveralls](https://img.shields.io/coveralls/github/chdemko/pandoc-latex-french-spaces/develop.svg?logo=Codecov&logoColor=white)](https://coveralls.io/github/chdemko/pandoc-latex-french-spaces?branch=develop)
@@ -15,8 +16,7 @@ Installation
 [![Downloads](https://img.shields.io/pypi/dm/pandoc-latex-french-spaces?logo=pypi&logoColor=white)](https://pepy.tech/project/pandoc-latex-french-spaces)
 [![Development Status](https://img.shields.io/pypi/status/pandoc-latex-french-spaces.svg?logo=pypi&logoColor=white)](https://pypi.org/project/pandoc-latex-french-spaces/)
 [![Python version](https://img.shields.io/pypi/pyversions/pandoc-latex-french-spaces.svg?logo=Python&logoColor=white)](https://pypi.org/project/pandoc-latex-french-spaces/)
-[![Poetry version](https://img.shields.io/badge/poetry-1.2%20|%201.3%20|%201.4%20|%201.5%20|%201.6%20|%201.7-blue.svg?logo=poetry)](https://python-poetry.org/)
-[![Pandoc version](https://img.shields.io/badge/pandoc-2.11%20|%202.12%20|%202.13%20|%202.14%20|%202.15%20|%202.16%20|%202.17%20|%202.18%20|%202.19%20|%203.0%20|%203.1-blue.svg?logo=markdown)](https://pandoc.org/)
+[![Pandoc version](https://img.shields.io/badge/pandoc-2.11%20|%202.12%20|%202.13%20|%202.14%20|%202.15%20|%202.16%20|%202.17%20|%202.18%20|%202.19%20|%203.0%20|%203.1%20|%203.2%20|%203.3%20|%203.4%20|%203.5-blue.svg?logo=markdown)](https://pandoc.org/)
 [![Latest release](https://img.shields.io/github/release-date/chdemko/pandoc-latex-french-spaces.svg?logo=github)](https://github.com/chdemko/pandoc-latex-french-spaces/releases)
 [![Last commit](https://img.shields.io/github/last-commit/chdemko/pandoc-latex-french-spaces/develop?logo=github)](https://github.com/chdemko/pandoc-latex-french-spaces/commit/develop/)
 [![Repo Size](https://img.shields.io/github/repo-size/chdemko/pandoc-latex-french-spaces.svg?logo=github)](http://pandoc-latex-french-spaces.readthedocs.io/en/latest/)
@@ -71,13 +71,28 @@ Contribute
 Instructions
 ------------
 
-Install `poetry`, then run
+Install `hatch`, then run
 
 ~~~shell-session
-$ poetry install
-$ poetry shell
+$ hatch run pip install pre-commit
+$ hatch run pre-commit install
 ~~~
 
-And submit your changes. When you commit, hooks will be executed to check
-your code.
+to install `pre-commit` before working on your changes.
+
+Tests
+-----
+
+When your changes are ready, run
+
+~~~shell-session
+$ hatch test
+$ hatch fmt --check
+$ hatch run lint:check
+$ hatch run docs:build
+$ hatch build -t wheel
+~~~
+
+for running the tests, checking the style, building the documentation
+and building the wheel.
 
