@@ -28,9 +28,13 @@ def spaces(elem: Element, doc: Doc) -> RawInline | None:
     """
     # Is it in the right format and is it a Space?
     if doc.format in ("latex", "beamer") and isinstance(elem, Space):
-        if isinstance(elem.prev, Str) and elem.prev.text[-1] in ("«", "“", "‹"):
+        if (
+            isinstance(elem.prev, Str)
+            and elem.prev.text
+            and elem.prev.text[-1] in ("«", "“", "‹")
+        ):
             return RawInline("\\thinspace{}", "tex")
-        if isinstance(elem.next, Str):
+        if isinstance(elem.next, Str) and elem.next.text:
             if elem.next.text[0] == ":":
                 return RawInline("~", "tex")
             if elem.next.text[0] in (";", "?", "!", "»", "”", "›"):
